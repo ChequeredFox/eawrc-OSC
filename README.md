@@ -9,8 +9,7 @@ Intended to be used as middleware between EA WRC and Warudo
 
 ## Installation
 - [Python 3.9+](https://www.python.org/downloads/)
-- `pip install py-eawrc-sdk`
-- Rownload repository
+- cd to downloaded repository `pip install -r requirements.txt`
 - Run main.py
 
 NOTE - EA WRC must be launched at least once to generate telemmetry configuration files found in `%UserProfile%/Documents/My Games/WRC/telemetry/`
