@@ -46,7 +46,7 @@ def loop(wrc, client, state):
     client.send_message("/motion/z", z)   
 
 if __name__ == "__main__":
-    config = Config("src/config.yaml")
+    config = Config("config.yaml")
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--ip", default=config.settings['destination_ip'],
@@ -60,6 +60,7 @@ if __name__ == "__main__":
     state = State()
     wrc = eawrcsdk.EAWRCSDK()
     wrc.connect()
+    print("client connected")
     while True:
         try:
             wrc.freeze_buffer_latest() #Freeze telemmetry data so all data retrieved is from the same telemmetry packet
