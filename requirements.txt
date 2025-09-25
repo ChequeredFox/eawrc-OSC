@@ -1,1 +1,3 @@
 py-eawrc-sdk
+python-osc
+PyYAML
